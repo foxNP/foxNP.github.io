@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>C-tron</title>
+    <meta name="Keywords" content="C-tron">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="logo">
+        </div>
+        <button type="button" class="menu-btn open-menu" title="open-menu"></button>
+        <nav class="menu">
+            <ul>
+                <li><a href="#company">О компании</a></li>
+                <li><a href="#map">Как нас найти</a></li>
+                <li><a href="#contacts">Наши контакты</a></li>
+            </ul>
+            <button type="button" class="menu-btn close-menu" title="close-menu"></button>
+        </nav>
+    </div>
+    <script>
+        var menu = document.querySelector('.menu'),
+            btnOpen = document.querySelector('.open-menu'),
+            btnClose = document.querySelector('.close-menu');
+
+        btnOpen.addEventListener('click', function () {
+            menu.classList.add('open');
+        });
+        btnClose.addEventListener('click', function () {
+            menu.classList.remove('open');
+        });
+    </script>
+</header>
+<main class="all">
+    <div class="container">
+        <section>
+            <div class="info-box">
+                <div class="info-box-inner">
+                    <div class="h1">Компания <h1>C-tron</h1> предлагает своим клиентам:</div>
+                    <ul class="info-list">
+                        <li>Абонентское обслуживание компьютеров</li>
+                        <li>Развитие Вашего бизнеса с облачными решениями Microsoft</li>
+                        <li>Услуги авторизованного сервисного центра Lenovo и HP Inc</li>
+                        <li>Выгодные цены на продукцию партнеров и гибкие условия сотрудничества</li>
+                        <li>Индивидуальный подход к каждому клиенту, на всех этапах с Вами будет работать персональный
+                            менеджер
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="company" class="">
+            <h2>О компании</h2>
+            <p>
+                Компания C-tron является поставщиком компьютерной техники и комплексных
+                решений в области продаж, инсталляции, обслуживания и ремонта
+                It-
+                инфраструктур для частных лиц и предприятий различного формата. Мы успешно
+                работаем на российском рынке информационных технологий с 2011 года. На
+                текущий момент, среди клиентов компании числится более пятисот
+                государственных и коммерческих организаций.
+            <p>
+            <p>
+                В It- индустрии все стремительно меняется, мы всегда стараемся быть в курсе
+                последних тенденций и активно используем их в работе с клиентами. Это важно,
+                ведь внедрение новых технологий позволяет оптимизировать рабочие процессы
+                и, как следствие, принести дополнительную прибыль нашим заказчикам.
+            </p>
+            <p>
+                Команда C-tron находится в постоянном поиске оптимальных решений для большого и малого бизнеса. Мы
+                работам с ведущими компаниями отрасли: Microsoft, Lenovo, HPe, Dell, IBM, Intel и другими. Активное
+                сотрудничество с гигантами индустрии позволяет нам предлагать своим клиентам выгодные условия по
+                приобретению продукции наших партнеров.
+            </p>
+            <p>
+                Стоить отметить, что компания C- tron имеет собственный сервисный центр, авторизованный компаниями
+                Lenovo и HP Inc. Благодаря этому, наши клиенты всегда могут быть уверены в качественном гарантийном и
+                постгарантийном обслуживании компьютерной техники данных производителей.
+            </p>
+            <p>
+                Специалисты компании C-tron имеют колоссальный опыт в сфере It- услуг и
+                регулярно повышают квалификацию, проходя обучение у ведущих it-
+                производителей. Мы готовы взяться за выполнение задач любой сложности и
+                гарантируем Вам отличный результат.
+            </p>
+        </section>
+        <section id="map" class="">
+            <h2>Как нас найти</h2>
+            <div class="">
+                <h3>На общественном транспорте</h3>
+                <p>Поезжайте до стации метро «Румянцево». Поднявшись на поверхность, Вы сразу попадёте на территорию
+                    Бизнес-парка «Румянцево», далее направляйтесь к корпусу "В" (подъезд №16).</p>
+                <h3>На автомобиле</h3>
+                <p>Из Москвы: Двигайтесь по МКАД, далее по Ленинскому проспекту или проспекту Вернадского. После
+                    пересечения МКАД держитесь правее, через 0,5 км будет съезд к Бизнес-парку «Румянцево». Наш офис
+                    расположен в корпусе "В" (подъезд №16).</p>
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a9977108f29d51d0055fc6240fbead1ef9cdf4ce600cc7b8c1d96e150aaad2f&amp;width=auto&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts-box">
+            <div class="contacts-box-item contacts-box-time">
+                <h2>График работы</h2>
+                <p>
+                    Пн&nbsp;с&nbsp;10.00 до&nbsp;18.00 <br>
+                    Вт&nbsp;с&nbsp;10.00 до&nbsp;18.00 <br>
+                    Ср&nbsp;с&nbsp;10.00 до&nbsp;18.00 <br>
+                    Чт&nbsp;с&nbsp;10.00 до&nbsp;18.00 <br>
+                    Пт&nbsp;с&nbsp;10.00 до&nbsp;17.00 <br>
+                    Сб, Вс&nbsp;&mdash; выходные дни
+                </p>
+            </div>
+            <div class="contacts-box-item contacts-box-letter">
+                <h2>Наши контакты</h2>
+                <p>
+                    ООО "Цитрон" ОГРН 1115003010000<br>
+                    142784 Москва, пос. Московский <br>
+                    дер. Румянцево бизнес-парк<br>
+                    "Румянцево" стр 2 Корп В оф. 322В<br>
+                    +7(495) 225 52 49 (многоканальный)<br>
+                    E-mail: admin-22@ctron.ru
+                </p>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div>
+            &copy;&nbsp;2019 Все права защищены. Вся информация на&nbsp;сайте носит информационный характер и&nbsp;не&nbsp;является
+            публичной
+            офертой, определяемой положением статьи 429&nbsp;ГК РФ.
+            <br>
+            Во&nbsp;избежание недоразумений просим Вас уточнять интересующую информацию по&nbsp;телефону +7(495)225&nbsp;52&nbsp;49
+            (Москва).
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
