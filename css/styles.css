@@ -176,7 +176,7 @@ h2 {
     position: absolute;
     top: -1px;
     left: 0;
-    content: "\2714";
+    content: "url(../img/svg/contract.svg)";
     margin-right: 5px;
 }
 .map {
