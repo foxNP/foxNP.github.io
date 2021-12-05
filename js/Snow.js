@@ -205,3 +205,11 @@ var jsCanvasSnow =
 		window.requestAnimationFrame( jsCanvasSnow._loop );
 	}
 };
+
+
+setInterval(function () {
+    var imagesArray = [].slice.call(document.querySelectorAll("#garland img"));
+    imagesArray.forEach(function (img) {
+        img.style.opacity = Number(Math.random() > 0.5);
+    });
+}, 1000);
