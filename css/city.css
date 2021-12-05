@@ -1,0 +1,65 @@
+canvas{
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at center 261px, rgba(255,255,255,0.95) 9%, rgba(255,255,255,0) 34%), url("../img/desktop-city.jpg") no-repeat center 15%;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  padding: 0 100px;
+}
+.text_mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+body {
+  background-image: radial-gradient(circle at center 229px, rgba(255,255,255,0.95) 9%, rgba(255,255,255,0) 50%), url("../img/desktop-city.jpg");
+}
+.text {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: radial-gradient(circle at center 109px, rgba(255,255,255,0.95) 9%, rgba(255,255,255,0) 50%), url("../img/mobile-city.jpg") no-repeat center 15%;
+    background-size:cover;
+  }
+  .text {
+    display: none;
+  }
+  .text_mobile {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    display: block;
+    padding: 0 10px;
+  }
+}
