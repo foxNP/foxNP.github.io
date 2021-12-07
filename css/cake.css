@@ -12,7 +12,6 @@ body {
   background-size: cover;
   width: 100vw;
   min-height: 100vh;
-  max-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -43,7 +42,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    background: radial-gradient(circle at center 75%, rgba(255,255,255,0.95) 5%, rgba(255,255,255,0) 50%), url("../img/mobile-cake.jpg") no-repeat center 15%;
+    background: radial-gradient(circle at center 72%, rgba(255,255,255,0.95) 5%, rgba(255,255,255,0) 50%), url("../img/mobile-cake.jpg") no-repeat center 15%;
     background-size:cover;
   }
   .text {
@@ -51,7 +50,7 @@ body {
   }
   .text_mobile {
     position: absolute;
-    top: 75%;
+    top: 72%;
     left: 0;
     transform: translateY(-50%);
     width: 100%;
@@ -63,5 +62,18 @@ body {
     font-weight: bold;
     display: block;
     padding: 0 10px;
+  }
+  .mobile_cake_garland {
+    background-image: url("../img/mobile-cake-spruce.gif");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    max-width: 280px;
+    width: 100%;
+    min-height: 173px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
   }
 }
